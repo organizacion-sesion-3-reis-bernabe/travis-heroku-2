@@ -8,7 +8,7 @@ before_script:
 script: "./vendor/bin/phpunit ./tests"
 deploy:
   provider: heroku
-  app: cursogithub-tarea6
+  app: app-tarea6-cursogithub
   on: master
   skip_cleanup: true
   api_key:
