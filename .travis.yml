@@ -1,15 +1,15 @@
 language: php
 php:
-  - 7.2
+- 7.2
 services:
-  - mysql
+- mysql
 before_script:
-  - composer install
-script: ./vendor/bin/phpunit ./tests
+- composer install
+script: "./vendor/bin/phpunit ./tests"
 deploy:
   provider: heroku
   app: cursogithub-tarea6
   on: master
   skip_cleanup: true
   api_key:
-    secure: 
+    secure: JzmgHCL1psmRvLTqrD/yqngE3NjbtNSqF/zpvi1XslSWI7lDnDxTvANlQAoN4q+y0HN6kKYuy8ftivZOHj+u+8rPolh8pOsdq+FktrJ/KcTp7SGDA5cm1pd9+8YstfYOCs39ZXRtVoeVPf9p3iEYli549346ZBChBCmNLPYdsPMcww9oZgEq4znk5pvgr1IEu15lEGxet6Ck3U/WPsrevJVF+HGu/CSguTguUe7Yp2rQJ6os0KMwuhbteuZJxsFX+lkpoSN5V+yQC9VUIaFxLPdZBIa82vYP12r0XjjWqR1wSPJJdpbbOI7yIsabas0xJlcw+crm3eHywAegePdEqG6iDILUIbVX6kR6ri1EiY58AbyrDQjA6OxIJMxtc4NsSBv3PGXbF8V+7T5gvTrTcWEs5jfZbqKUA2Ih60xcCfXVkhlRL8CoXRzS9OxGprSMlMVaWX8un3qw6lSpRLo8SZa46wingKC96LaHcVSS2FVpCdXEPS0sgbeQSqR4XfF2swVpLzjFLCYcw3inly9wXyrbqMTaekmZXH3+s3VEgeXM4ZRqOo9Yr+KMUf7pZOWXGub0tXN+6/I9I4t/OUR/LLB50Ssc4pSi2JpFh8ZMKRDu3V606l43dv6DnZzTNforT0whDAkEv+QJhKb3E5jTKLw1YJCjTYXHVATNk4Db7po=
